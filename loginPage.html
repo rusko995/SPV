@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>foto KŠK - prijavna stran</title>
+
+  
+      <style>
+      
+              @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+            /*velikost gumba za prijavo*/
+            .btn-large { padding: 9px 14px; font-size: 15px; line-height: normal;  }
+
+            /*dekoracija gumba, ko gremo z misko nanj - hover*/
+            .btn:hover { color: #3762bc; text-decoration: none; background-color: #3762bc; background-position: 0px -50px;  background-repeat: no-repeat;}
+        
+            /*barva teksta na gumbu*/
+            .btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+
+            /*cyan okvir z gradientom v temnejšo modro +okvir ima temno modro barvo*/
+            .btn-primary { background-image: -webkit-linear-gradient(top, #00adef, #1f87ae); border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4);  }
+
+            /*da gre od zacetka do konca in ne samo toliko, kot je teksta Prijava*/
+            .btn-block { width: 100%; display:block; }
+            
+            /*box za inut se ujema z boxom za login*/
+            * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+        html { width: 100%; height:100%; overflow:hidden; }
+
+        body { 
+	        width: 100%;
+	        height:100%;
+	        font-family: 'Open Sans', sans-serif;
+	        background: #000
+        }
+        .login { 
+	        position: absolute;
+	        top: 50%;
+	        left: 50%;
+	        margin: -150px 0 0 -150px;
+	        width:300px;
+	        height:300px;
+        }
+          .login h1 {
+              color: #00adef; text-align:center; letter-spacing:1px;}
+
+        input { 
+	        width: 100%; 
+	        margin-bottom: 10px; 
+	        background: rgba(255, 255, 255, 0.2);
+	        border: none;
+	        outline: none;
+	        padding: 10px;
+	        font-size: 13px;
+	        color: snow;
+	        border: 2px solid rgba(0,0,0,0.3);
+        }
+        input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+    </style>
+
+</head>
+
+    <body>
+      <div class="login">
+	    <h1>Vstop</h1>
+        <form method="post">
+             <!--Uporabnik nam poda uporabnisko ime in geslo; type pomeni, kako se mu prikazuje - pass so pikice
+                placeholder pomeni, kaj pise notri, z required pa povemo, da je to nujen podatek
+                -->
+    	    <input type="text" name="u" placeholder="Uporabniško ime" required="required" />
+            <input type="password" name="p" placeholder="Geslo" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Prijava</button>
+        </form>
+        </div>
+    </body>
+</html>
