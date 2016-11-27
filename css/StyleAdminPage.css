@@ -2,7 +2,6 @@
 margin: 0px;
 padding: 0px;
 }
-
 body {
     background-color: #000000;
 }
@@ -35,7 +34,6 @@ header {
     float: left;
     margin-top:30px;
 }
-
 .headerSocialLinks li a {
     display: block;
     float: left;
@@ -65,20 +63,22 @@ header {
 .logout a:hover {
     background-color: #3762bc; 
 }
-
 #main {
     width:100%;
-    margin-left:40px;
+    display:flex;
+	flex-flow:row;
+
 }
-#main ul {
+#main nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 230px;
-    background-color: #00adef;
-    border: 1px solid #555;
+    margin-left:40px;
 }
-#main li a {
+#main nav a {
+    border: 1px solid #555;
+    background-color: #00adef;
     display: block;
     color: #000;
     padding: 30px 30px;
@@ -87,26 +87,120 @@ header {
     font-size:20px;
     font-weight: bold;
     border-bottom: 1px solid #555;
+    border-radius: 13px;
 }
-#main li:last-child {
-    border-bottom: none;
-}
-#main li a.active {
+#main nav a.active {
     background-color: #3762bc;
     color: black;
 }
-#main li a:hover:not(.active) {
-    background-color: #555;
-    color: black;
+#main nav a:hover:not(.active) {
+    background-color: #808080;
+}
+.podlaga{
+    margin-left:40px;
+    width:60%;
+    background-color:#808080;
+    border-radius: 13px;
+}
+input[type=submit]{
+    cursor: pointer;
+}
+input{
+    max-width:80%
 }
 
+.vsebinaProfil{
+    width:90%;
+    margin:20px auto;
+}
+.vec {
+    transition: opacity 500ms;
+    visibility: hidden;
+    margin-top:30px;
+}
+.vec:target {
+    visibility: visible;
+    opacity: 1;
+}
+.splosno{
+    float:left;
+    margin-right:20px;
+}
+form > input{
+    background-color: black;
+    color: snow;
+    border: none;
+    font-size:14px;
+    padding: 8px 16px;
+    border-radius: 7px;
+    margin-top:30px;
+}
+ .vrstica input{
+    max-width:90%;
+    background-color: black;
+    color: snow;
+    border: none;
+    font-size:14px;
+    padding: 8px 16px;
+    border-radius: 7px;
+    margin-bottom:1px;
+}
+ button{
+     color:snow;
+     background-color:black;
+     border:none;
+     padding: 1px 2px;
+     cursor: pointer;
+ }
 
-@media only screen and (max-width: 960px) and (min-width:480px) {
+form .vrstica{
+    margin-bottom:7px;
+}
+.zajem {
+    visibility: hidden;
+}
+
+.vsebinaUporabniki, .vsebinaUrejanjeGalerij{
+    text-align:center;
+    margin-top:50px;
+    color:snow;
+    font-size:40px;
+}
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+.box__input{
+    text-align:center;
+    margin-top:170px;
+}
+input.box__file{
+    padding: 17px 30px;
+    color:snow;
+    background-color:black;
+    font-size:16px;
+}
+button.box__button{
+     padding: 20px 30px;
+     font-size:16px;
+}
+.logging{
+    text-align:center;
+    margin-top:10px;
+}
+@media only screen and (max-width: 1080px) and (min-width:480px) {
     header {
         height:190px;
     }
     .headerSocialLinks li {
         margin-top:15px;
+    }
+    .splosno{
+    float:none;
+    margin-right:0;
     }
     .logout a {
         margin-top: 15px;

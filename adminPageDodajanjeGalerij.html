@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>KŠK galerija - admin</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/StyleAdminPage.css">
+    <script type="text/javascript" src="js/adminJS.js" async></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <ul class="headerSocialLinks">
+                <li><a href="https://www.youtube.com/channel/UCKqpXFl4A3Fj3SNGwDXJN0A" title="YouTube" target="_blank"><img src="pics/ytBlack.png" alt="YouTube" /></a></li>
+                <li><a href="https://www.facebook.com/klubstudentovkranj" title="Facebook" target="_blank"><img src="pics/fbBlack.png" alt="Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/ksk_info/" title="Instagram" target="_blank"><img src="pics/igBlack.png" alt="instagram" /></a></li>
+                <li><a href="http://www.ksk.si/" title="KŠK" target="_blank"><img src="pics/wwwBlack.png" alt="ksk.si" /></a></li>
+            </ul>
+            <div class="logout">
+                <a href="loginPage.html">Odjava</a>
+            </div>
+            <a href="index.html"><img src="pics/banner.png" alt="logo" /></a>
+        </div>
+    </header>
+
+
+
+    <div id="main">
+        <nav>
+                <a href="adminPageUrediProfil.html">Uredi profil</a>
+                <a href="adminPageUporabniki.html">Uporabniki</a>
+                <a class="active" href="#">Dodajanje galerij</a>
+                <a href="adminPageUrejanjeGalerij.html">Urejanje galerij</a>
+                <a href="adminPageLog.html">Log</a>
+        </nav>
+        <div class="podlaga">
+            <form class="box" method="post" enctype="multipart/form-data">
+                <div class="box__input">
+                    <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+                    <!--<label for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label>-->
+                    <button class="box__button" type="submit">Naloži</button>
+                </div>
+                <div class="box__uploading">Uploading&hellip;</div>
+                <div class="box__success">Done!</div>
+                <div class="box__error">Error! <span></span>.</div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

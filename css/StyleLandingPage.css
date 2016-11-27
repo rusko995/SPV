@@ -8,7 +8,7 @@ body {
 .newData{
     height:1000px;
     background:#09F;
-    margin 10px 0px;
+    margin: 10px 0px;
 }
 header {
     width:100%;
@@ -66,7 +66,6 @@ ul.topnav li input{
     width: 130px;
     height:40px;
     background-color:#625959;
-    -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border:0;
     color:snow;
@@ -138,8 +137,6 @@ header ul.topnav li a {
     border: 1px solid #888;
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
 }
@@ -169,7 +166,7 @@ header ul.topnav li a {
 }
 .pop-telo {
     padding: 2px 16px;
-    background-color: #4e4e4e;
+    background-color: #808080;
 }
 .pop-telo form{
     max-width:100%;
@@ -186,7 +183,6 @@ header ul.topnav li a {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-    z-index:6;
     position: fixed;    /* ostane na mestu */
     z-index: 10;        
     padding-top: 300px; /* lokacija od vrha */

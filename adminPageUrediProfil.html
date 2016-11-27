@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>KŠK galerija - admin</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/StyleAdminPage.css">
+    <script type="text/javascript" src="js/adminJS.js" async></script>
+</head>
+
+<body>
+    
+    <header>
+        <div class="banner">
+            <ul class="headerSocialLinks">
+                <li><a href="https://www.youtube.com/channel/UCKqpXFl4A3Fj3SNGwDXJN0A" title="YouTube" target="_blank"><img src="pics/ytBlack.png" alt="YouTube" /></a></li>
+                <li><a href="https://www.facebook.com/klubstudentovkranj" title="Facebook" target="_blank"><img src="pics/fbBlack.png" alt="Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/ksk_info/" title="Instagram" target="_blank"><img src="pics/igBlack.png" alt="instagram" /></a></li>
+                <li><a href="http://www.ksk.si/" title="KŠK" target="_blank"><img src="pics/wwwBlack.png" alt="ksk.si" /></a></li>
+            </ul>
+            <div class="logout">
+                <a href="loginPage.html">Odjava</a>
+            </div>
+            <a href="index.html"><img src="pics/banner.png" alt="logo" /></a>
+        </div>
+    </header>
+
+    
+
+    <div id="main">
+        <nav>
+            <a class="active" href="#">Uredi profil</a>
+            <a href="adminPageUporabniki.html">Uporabniki</a>
+            <a href="adminPageDodajanjeGalerij.html">Dodajanje galerij</a>
+            <a href="adminPageUrejanjeGalerij.html">Urejanje galerij</a>
+            <a href="adminPageLog.html">Log</a>
+        </nav>
+        <div class="podlaga">
+            <div class="vsebinaProfil">
+                <form action="#vec" method="POST">
+                    <div class="vrstica">
+                        <label >Za urejanje svojega profila, najprej vpiši svoje geslo:</label><br />
+                        <input name="potrditev" required="required" placeholder="geslo" type="password" value="" size="28" /><br />
+                        <input type="submit" value="Preverjanje"/>
+                    </div>
+                </form>
+
+                <div id="vec" class="vec">
+                    <form>
+                        <div class="splosno">
+                            <div class="vrstica">
+                                <label>Vpiši svoje novo uporabniško ime:</label><br />
+                                <input name="uprIme" type="text" placeholder="uporabniško ime" value="" size="28" /><br />
+                            </div>
+                            <div class="vrstica">
+                                <label>Vpiši svoj nov e-mail:</label><br />
+                                <input name="email" type="email" placeholder="e-mail" value="" size="28" /><br />
+                            </div>
+                            <div class="vrstica">
+                                <label>Vpiši svoje novo geslo:</label><br />
+                                <input name="geslo" type="password" placeholder="geslo" value="" size="28" /><br />
+                            </div>
+                        </div>
+                        
+                        <div class="slikanje">
+                            <label>Ponastavi sliko profila</label><br />
+                            <button id="zaZajem">Kamera</button>
+                            <input type="file" name="pic" accept="image/*">
+
+                            <noscript><p>Ne podpira zajema s kamero!</p></noscript>
+
+                            <div class="zajem" id="zajem">
+                                <video id="video" width="130" height="130" autoplay></video>
+                                <button id="snap">Slikaj</button>
+                                <canvas id="canvas" width="130" height="130">Ne bo šlo!</canvas>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Shrani spremembe" />
+                    </form>
+
+
+                </div>
+                
+                
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+
+</body>
+</html>

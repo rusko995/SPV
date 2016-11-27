@@ -1,6 +1,6 @@
 // JavaScript source code
 /*
-//vedno, ko skrola, ga poslusa
+//vedno, ko skrola, ga poslusa in pol doda vsebino na stran
 function yHandler() {
     var wrap = document.getElementById('main');
     var contentHeight = main.offsetHeight;  //dobi visino 
@@ -8,7 +8,7 @@ function yHandler() {
     var y = yOffset + window.innerHeight;   //poscrolano + notranje mere okna
     if (y >= contentHeight) {
         main.innerHTML += '<div class="newData"></div>';
-        //ajax poklice nove podatke
+        //ajax poklice nove podatke 
     }
 }
 window.onscroll = yHandler;
