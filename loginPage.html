@@ -3,18 +3,23 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <link rel="stylesheet" href="css/StyleLogin.css">
+    <script type="text/javascript" src="js/loginJS.js" async></script>
   <title>foto KŠK - prijava</title>
 
 </head>
     <body>
+        <div class="banner">
+            <a href="landingPage.htm"><img src="pics/banner.png" alt="logo" /></a>
+        </div>
+
       <div class="login">
 	    <h1>Vstop</h1>
-        <form method="post">
+        <form action="adminPage.html">
              <!--Uporabnik nam poda uporabnisko ime in geslo; type pomeni, kako se mu prikazuje - pass so pikice
                 placeholder pomeni, kaj pise notri, z required pa povemo, da je to nujen podatek -->
-    	    <input type="text" name="u" placeholder="Uporabniško ime" required="required" />
-            <input type="password" name="p" placeholder="Geslo" required="required" />
-            <button type="submit" class="btn ">Prijava</button>
+    	    <input id="lala" type="text" name="u" placeholder="Uporabniško ime" required="required" value=""/>
+            <input id="hihi" type="password" name="p" placeholder="Geslo" required="required" value=""/>
+            <input id="prijava" type="submit" value="Prijava" class="btn" />
         </form>
         </div>
     </body>
