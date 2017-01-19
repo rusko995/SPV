@@ -121,7 +121,7 @@ nav a:hover {
     padding: 5px; 
 }
 .kontakt {
-    display: none;      /*default je skrit*/
+    /*display: none;      /*default je skrit*/
     position: fixed;    /* ostane na mestu */
     z-index: 10;        
     padding-top: 300px; /* lokacija od vrha */

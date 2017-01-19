@@ -1,20 +1,29 @@
 <!--extendamo strani-->
 {% extends "galerija/header.html" %}
-
+{% load i18n %}
 {% block content %}
 
 <div id="main">
 	<ul>
 	{% for album in albums %}
+	
 	<li>
+		
 		<div class="slika">
 			<a href="#kiki"><img src='{{ album.naslovnaSlika.url }}' alt="lala" /></a>
-			<h2><span>{{album.title}}<br />{{album.pubDate}}</span></h2>
+			<h2><span>
+				{% if album.was_published_recently %}
+					<sup class="new">{% blocktrans %}new{% endblocktrans %}</sup>
+				{% endif %}
+				{{album.title}}<br />{{album.pubDate}}
+				</span>
+			</h2>
 		</div>
 		
 	</li>
 	{% endfor %}
 	</ul>
+	
 </div>
 
 {% endblock %}

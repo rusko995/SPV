@@ -1,0 +1,33 @@
+<!--extendamo strani-->
+{% extends "galerija/header.html" %}
+{% load i18n %}
+
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block content %}
+{% load static %}
+<script src="{% static 'js/landingJS.js' %}"></script>
+
+ <div id="kontaktt" class="kontakt">
+	<!-- vsebina -->
+	<div class="pop-celoten">
+		<!--glava popupa-->
+		<div class="pop-glava">
+			<!--tukaj naredimo, da ce klikne close, da se zapre-->
+			<span class="zapri">×</span>
+			<h2>{% blocktrans %}Write us an e-mail:{% endblocktrans %}</h2>
+		</div>
+		<!--glavni del popupa-->
+		<div class="pop-telo">
+			<form role="form" action="/" method="post">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<button type="submit">Submit</button>
+			</form>				
+		</div>
+	</div>
+</div>
+		
+		
+
+{% endblock %}
