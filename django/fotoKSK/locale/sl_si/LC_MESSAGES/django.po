@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-19 17:40+0100\n"
+"POT-Creation-Date: 2017-01-20 12:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: .\galerija\forms.py:21
+msgid "Your name:"
+msgstr ""
+
+#: .\galerija\forms.py:22
+msgid "Your email:"
+msgstr ""
+
+#: .\galerija\forms.py:23
+msgid "What do you want to say?"
+msgstr ""
+
 #: .\galerija\templates\galerija\contact.html:18
 msgid "Write us an e-mail:"
+msgstr ""
+
+#: .\galerija\templates\galerija\contact.html:25
+msgid "Submit"
 msgstr ""
 
 #: .\galerija\templates\galerija\header.html:28

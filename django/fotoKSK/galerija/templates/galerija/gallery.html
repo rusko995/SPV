@@ -1,0 +1,22 @@
+<!--extendamo strani-->
+{% extends "galerija/header.html" %}
+{% load i18n %}
+{% block content %}
+
+<div id="main">
+	<ul>
+	{% for picture in pictures %}
+	
+	<li>
+		
+		<div class="slika">
+			<img src='{{ picture.image.url }}' alt="lala" />
+		</div>
+		
+	</li>
+	{% endfor %}
+	</ul>
+	
+</div>
+
+{% endblock %}

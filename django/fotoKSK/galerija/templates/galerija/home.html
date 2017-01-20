@@ -10,7 +10,7 @@
 	<li>
 		
 		<div class="slika">
-			<a href="#kiki"><img src='{{ album.naslovnaSlika.url }}' alt="lala" /></a>
+			<a href="{% url 'gallery_view' album.id  %}"><img src='{{ album.naslovnaSlika.url }}' alt="lala" /></a>
 			<h2><span>
 				{% if album.was_published_recently %}
 					<sup class="new">{% blocktrans %}new{% endblocktrans %}</sup>

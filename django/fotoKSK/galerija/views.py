@@ -32,32 +32,6 @@ def index(request):
 	return render (request, 'galerija/home.html', context)
 	
 	
-'''
-def search(request):
-	"""
-	The search page
-	
-	This is where all the products all displayed, orderd by the date they were put into database,
-	newest on top. It has top menu, login and search bar
-	
-	Keyword arguments:
-	request -- the django requst object
-	"""
-	context = {'searchForm':SearchForm()}
-	#order = request.GET.get('order','-pub_date')
-	#product_list = Product.objects.order_by(order)
-	#paginator = Paginator(product_list, 10)
-   	#page = request.GET.get('page')
-   	try:
-  	     products = paginator.page(page)
- 	except PageNotAnInteger:
- 	      products = paginator.page(1)
-   	except EmptyPage:
-   	    products = paginator.page(paginator.num_pages)
-	context['products'] = products
-	return render(request, 'rock/SearchPage.html', context)
-	'''
-	
 def contact(request):
 	"""The contact page
   
@@ -88,5 +62,10 @@ def contact(request):
 
 	return render(request, 'galerija/contact.html', {'form': form_class,})
 	
-
-	
+def gallery_view(request, album_id):
+	album=Album.objects.get(id=album_id)
+	queryset = Picture.objects.filter(album=album)
+	context = {
+		"pictures": queryset,
+	}
+	return render(request, 'galerija/gallery.html', context)

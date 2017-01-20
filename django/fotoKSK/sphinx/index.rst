@@ -1,9 +1,9 @@
-.. galerija documentation master file, created by
-   sphinx-quickstart on Thu Jan 19 13:13:33 2017.
+.. KŠK gallery documentation master file, created by
+   sphinx-quickstart on Sun Jan 15 13:13:33 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to galerija's documentation!
+Welcome to gallery's documentation!
 ====================================
 
 .. toctree::
